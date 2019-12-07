@@ -45,8 +45,9 @@ def main(img1):
     img = cv2.imread(img1)
     mean = (0,0,0)
     std_dev = (15,15,15)
+    img2=img.copy()
     cv2.randn(img2, mean, std_dev)
-    gauss_noise = img+img1
+    gauss_noise = img+img2
     imglist=[]
     imglist.append(averaging(img))
     imglist.append(gaussianBlurr(img,5))
