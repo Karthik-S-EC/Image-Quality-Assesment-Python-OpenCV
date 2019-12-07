@@ -205,5 +205,7 @@ if(len(sys.argv) != 2):
 
 # calculate quality score
 image =  addBlur.main(sys.argv[1])
-#qualityscore = test_measure_BRISQUE(sys.argv[1])
+for images in image:
+	qualityscore = test_measure_BRISQUE(images)
+	print(qualityscore)
 #print("Score of the given image: ", qualityscore)
