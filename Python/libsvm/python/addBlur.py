@@ -54,11 +54,6 @@ plotImages(motion_blur(img),'Motion Blur', 4 , 2, 4)
 '''
 ''' Blur detection ''' 
 
-print(detectBlur(averaging(img)))
-print(detectBlur(gaussianBlurr(img,5)))
-print(detectBlur(gaussianBlurr(img,11)))
-print(detectBlur(bilateralfilter(img)))
-
 def medianFilter(img):
     return cv2.medianBlur(img, 3)
 
