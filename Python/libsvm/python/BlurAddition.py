@@ -43,12 +43,16 @@ def meanFilter(img):
 
 def main(img1):
     img = cv2.imread(img1)
+    mean = (0,0,0)
+    std_dev = (15,15,15)
+    cv2.randn(img2, mean, std_dev)
+    gauss_noise = img+img1
     imglist=[]
     imglist.append(averaging(img))
     imglist.append(gaussianBlurr(img,5))
     imglist.append(gaussianBlurr(img,11)) 
     imglist.append(bilateralfilter(img))
-    gauss_noise = ((skimage.util.random_noise(img, mode='gaussian',var=0.01))*255).astype(int)
+    #gauss_noise = ((skimage.util.random_noise(img, mode='gaussian',var=0.01))*255).astype(int)
     #gauss_noise = (gauss_noise*255).astype(int)
     imglist.append(medianFilter(gauss_noise)) 
     #imglist.append(medianFilter(s_and_p))
