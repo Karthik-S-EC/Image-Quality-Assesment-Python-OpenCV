@@ -49,6 +49,7 @@ def main(img1):
     imglist.append(gaussianBlurr(img,11)) 
     imglist.append(bilateralfilter(img))
     gauss_noise = skimage.util.random_noise(img, mode='gaussian',var=0.01)
+    gauss_noise = (gauss_noise*255).astype(int)
     imglist.append(medianFilter(gauss_noise)) 
     #imglist.append(medianFilter(s_and_p))
     imglist.append(meanFilter(gauss_noise)) 
