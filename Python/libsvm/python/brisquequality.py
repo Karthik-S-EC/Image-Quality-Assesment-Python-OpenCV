@@ -5,6 +5,7 @@ import sys
 # for gamma function, called 
 from scipy.special import gamma as tgamma
 import os
+import addBlur
 
 # import svm functions (from libsvm library)   
 # if python2.x version : import svm from libsvm (sudo apt-get install python-libsvm)
@@ -203,5 +204,6 @@ if(len(sys.argv) != 2):
     sys.exit(0)
 
 # calculate quality score
-qualityscore = test_measure_BRISQUE(sys.argv[1])
-print("Score of the given image: ", qualityscore)
+image =  addBlur.main(sys.argv[1])
+#qualityscore = test_measure_BRISQUE(sys.argv[1])
+#print("Score of the given image: ", qualityscore)
