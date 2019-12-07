@@ -60,6 +60,6 @@ def main(img1):
     imglist.append(meanFilter(gauss_noise)) 
     #imglist.append(meanFilter(s_and_p))
 
-    print(imglist)
+    #print(imglist)
 
 main(sys.argv[1])
