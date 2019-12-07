@@ -62,4 +62,4 @@ def main(img1):
 
     #print(imglist)
 
-main(sys.argv[1])
+#main(sys.argv[1])
