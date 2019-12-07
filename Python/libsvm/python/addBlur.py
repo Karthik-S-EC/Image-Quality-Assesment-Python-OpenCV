@@ -12,6 +12,7 @@ import skimage
 from skimage.restoration import estimate_sigma
 import matplotlib.pyplot as plt
 import numpy as np
+import sys
 
 def averaging(img):
     return cv2.blur(img, (5,5))
@@ -129,3 +130,4 @@ def main(img):
 
     print(imglist)
 
+main(sys.argv[1])
