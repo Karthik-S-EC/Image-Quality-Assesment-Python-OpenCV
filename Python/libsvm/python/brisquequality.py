@@ -148,7 +148,7 @@ def compute_features(img):
 # takes input of the image path
 def test_measure_BRISQUE(imgPath):
     # read image from given path
-    dis = cv2.imread(imgPath, 1)
+    dis = imgPath
     if(dis is None):
         print("Wrong image path given")
         print("Exiting...")
