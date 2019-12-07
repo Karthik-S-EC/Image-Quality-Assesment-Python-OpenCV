@@ -116,7 +116,8 @@ cv2.waitKey()
 cv2.destroyAllWindows()
 '''
 
-def main(img):    
+def main(img1):
+    img = cv2.imread(img1)
     imglist=[]
     imglist.append(averaging(img))
     imglist.append(gaussianBlurr(img,5))
