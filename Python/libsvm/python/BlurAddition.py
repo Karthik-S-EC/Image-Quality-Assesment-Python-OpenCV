@@ -61,5 +61,5 @@ def main(img1):
     #imglist.append(meanFilter(s_and_p))
 
     #print(imglist)
-
+    return imglist
 #main(sys.argv[1])
