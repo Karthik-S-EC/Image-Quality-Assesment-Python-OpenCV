@@ -1,5 +1,5 @@
 # Image-Quality-Assesment-Python-OpenCV
-### Many Models were proposed. Check out the work by @clunietp (https://github.com/clunietp) and Image Quality Assesment (Score) Prediction based on BRISQUE IQA by @krshrimali (https://github.com/krshrimali/No-Reference-Image-Quality-Assessment-using-BRISQUE-Model)
+### Many Models were proposed. Check out the work by @clunietp (https://github.com/clunietp) and Image Quality Assesment (Score) Prediction based on BRISQUE IQA by @krshrimali (https://github.com/krshrimali/No-Reference-Image-Quality-Assessment-using-BRISQUE-Model) for both C++ and Python
 
 Given an Image as Input, the code will generate different versions of image with different kinds of Blur and Noises and finds the best image out of those images which is close to Original Image
 
